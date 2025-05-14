@@ -14,6 +14,8 @@ function changeImage(src) {
             thumb.classList.remove('active');
         }
     });
+    
+    console.log('Image changed to:', src);
 }
 
 // Form Submission
