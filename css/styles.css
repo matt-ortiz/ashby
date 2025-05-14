@@ -340,6 +340,17 @@ header {
     color: var(--success-color);
 }
 
+.location-column ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.location-column i {
+    color: var(--success-color);
+}
+
 /* ------ LOCATION INFO ------ */
 .location-info {
     margin-bottom: 2.5rem;
