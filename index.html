@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7512 Ashby Ln UNIT E, Alexandria, VA 22315 | Kellie Ortiz, Samson Properties</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Kellie Ortiz</h1>
+                <p>Samson Properties</p>
+            </div>
+            <div class="contact-info">
+                <a href="tel:5551234567" class="phone-link">
+                    <i class="fas fa-phone"></i> (555) 123-4567
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="property-status">
+                <span class="badge">For Sale</span>
+            </div>
+            <div class="property-details">
+                <h2>7512 Ashby Ln UNIT E</h2>
+                <h3>Alexandria, VA 22315</h3>
+                <div class="price">$499,900</div>
+                <div class="quick-info">
+                    <div class="info-item">
+                        <i class="fas fa-bed"></i>
+                        <span>3 Beds</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-bath"></i>
+                        <span>2.5 Baths</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>1,584 sqft</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-home"></i>
+                        <span>Townhouse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="image-gallery">
+                <div class="gallery-main">
+                    <img src="images/main.jpg" alt="7512 Ashby Ln UNIT E" class="main-image" id="mainImage">
+                </div>
+                <div class="gallery-thumbnails">
+                    <img src="images/main.jpg" alt="Main View" class="thumbnail active" onclick="changeImage('images/main.jpg')">
+                    <img src="images/living.jpg" alt="Living Room" class="thumbnail" onclick="changeImage('images/living.jpg')">
+                    <img src="images/kitchen.jpg" alt="Kitchen" class="thumbnail" onclick="changeImage('images/kitchen.jpg')">
+                    <img src="images/bedroom.jpg" alt="Bedroom" class="thumbnail" onclick="changeImage('images/bedroom.jpg')">
+                </div>
+            </div>
+
+            <div class="property-description">
+                <h2>Property Description</h2>
+                <p>Welcome to this beautiful 3-bedroom, 2.5-bathroom townhouse in the sought-after Alexandria area. This spacious 1,584 sqft home features an open floor plan, updated kitchen with stainless steel appliances, and a cozy fireplace in the living room.</p>
+                <p>The primary bedroom includes an en-suite bathroom and walk-in closet. Two additional bedrooms and a full bathroom complete the upper level. The finished basement provides extra living space and storage.</p>
+                <p>Enjoy the private patio perfect for outdoor entertaining. Conveniently located near shopping, dining, and with easy access to major commuter routes.</p>
+            </div>
+
+            <div class="property-features">
+                <h2>Property Features</h2>
+                <div class="features-grid">
+                    <div class="feature-column">
+                        <h3>Interior Features</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Open floor plan</li>
+                            <li><i class="fas fa-check"></i> Updated kitchen</li>
+                            <li><i class="fas fa-check"></i> Stainless steel appliances</li>
+                            <li><i class="fas fa-check"></i> Fireplace in living room</li>
+                            <li><i class="fas fa-check"></i> Primary bedroom with en-suite</li>
+                            <li><i class="fas fa-check"></i> Walk-in closet</li>
+                            <li><i class="fas fa-check"></i> Finished basement</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <h3>Exterior Features</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Private patio</li>
+                            <li><i class="fas fa-check"></i> Low-maintenance landscaping</li>
+                            <li><i class="fas fa-check"></i> Assigned parking</li>
+                            <li><i class="fas fa-check"></i> Guest parking available</li>
+                            <li><i class="fas fa-check"></i> Community amenities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-info">
+                <h2>Location Information</h2>
+                <div class="location-grid">
+                    <div class="location-column">
+                        <h3>Nearby Amenities</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Shopping centers</li>
+                            <li><i class="fas fa-check"></i> Restaurants</li>
+                            <li><i class="fas fa-check"></i> Parks and recreation</li>
+                            <li><i class="fas fa-check"></i> Public transportation</li>
+                        </ul>
+                    </div>
+                    <div class="location-column">
+                        <h3>Schools</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Elementary: Local Elementary School</li>
+                            <li><i class="fas fa-check"></i> Middle: Local Middle School</li>
+                            <li><i class="fas fa-check"></i> High: Local High School</li>
+                        </ul>
+                        <p class="school-disclaimer">Please verify school information with the local district.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="form-container">
+                <h3>Schedule a Tour</h3>
+                <form id="tourForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (9am-12pm)</option>
+                            <option value="afternoon">Afternoon (12pm-4pm)</option>
+                            <option value="evening">Evening (4pm-7pm)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Questions or Comments</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="financing" name="financing">
+                        <label for="financing">I need financing information</label>
+                    </div>
+                    <button type="submit" class="btn-primary">Schedule Now</button>
+                </form>
+            </div>
+
+            <div class="agent-info">
+                <h3>Your Agent</h3>
+                <div class="agent-profile">
+                    <div class="agent-image">
+                        <img src="images/agent.jpg" alt="Kellie Ortiz">
+                    </div>
+                    <div class="agent-details">
+                        <h4>Kellie Ortiz</h4>
+                        <p>Samson Properties</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> kellie@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>Kellie Ortiz</p>
+                    <p>Samson Properties</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: kellie@example.com</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Property</h4>
+                    <p>7512 Ashby Ln UNIT E</p>
+                    <p>Alexandria, VA 22315</p>
+                    <p>MLS#: 12345678</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-zillow"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Kellie Ortiz, Samson Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your tour request has been submitted. We'll contact you shortly to confirm your appointment.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
