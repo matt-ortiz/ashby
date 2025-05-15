@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         tourForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // In a real implementation, you would send the form data to a server
-            // For now, we'll just show the confirmation modal
-            
             // Get form data
             const formData = new FormData(tourForm);
             const formDataObj = {};
@@ -40,13 +37,30 @@ document.addEventListener('DOMContentLoaded', function() {
             // Log form data to console (for development purposes)
             console.log('Form submitted:', formDataObj);
             
-            // Show confirmation modal
-            if (modal) {
-                modal.style.display = 'block';
-            }
-            
-            // Reset form
-            tourForm.reset();
+            // Submit form data using fetch API
+            fetch("https://submit-form.com/MsKkwjfHo", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(formDataObj),
+            })
+            .then(function(response) {
+                console.log('Form submission response:', response);
+                
+                // Show confirmation modal
+                if (modal) {
+                    modal.style.display = 'block';
+                }
+                
+                // Reset form
+                tourForm.reset();
+            })
+            .catch(function(error) {
+                console.error('Form submission error:', error);
+                alert('There was an error submitting the form. Please try again.');
+            });
         });
     }
     

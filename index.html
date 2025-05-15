@@ -47,7 +47,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-home"></i>
-                        <span>Townhouse</span>
+                        <span>Condo</span>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
         <div class="sidebar">
             <div class="form-container">
                 <h3>Schedule a Tour</h3>
-                <form id="tourForm" action="https://formspree.io/f/mblopbaw" method="POST">
+                <form id="tourForm" action="https://submit-form.com/MsKkwjfHo" method="POST">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
@@ -195,9 +195,13 @@
                         <textarea id="message" name="message" rows="4"></textarea>
                     </div>
                     <div class="checkbox-group">
-                        <input type="checkbox" id="financing" name="financing">
+                        <input type="checkbox" id="financing" name="financing" value="I need financing">
                         <label for="financing">I need financing information</label>
                     </div>
+
+                    <input type="hidden" name="_redirect" value="http://127.0.0.1:5000/" />
+                    <input type="hidden" name="_append" value="false" />
+
                     <button type="submit" class="btn-primary">Schedule Now</button>
                 </form>
             </div>
